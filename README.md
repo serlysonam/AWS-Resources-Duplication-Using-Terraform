@@ -7,8 +7,8 @@ We need to replicate both infrastructure/configuration as well as data and there
 
 First, we will see how we can replicate infra/config with non-persistent state.
 
-Using Import:
-
+**Using Import:
+**
 We use "terraform import" for importing existing infrastructure resources under terraform. In this approach terraform can import all the resources into the terraform state.
 
 For example, if we have 10 ec2 instances, 1 vpc and 2 subnets we must write 13 different import       statements one for each resource to import these resources into terraform state using "terraform import".
@@ -41,8 +41,8 @@ Once we have state and configuration in the source account we need to modify the
 
  Then we will change all the configuration related to target account like account number, vpc name, I am role etc. Once changes are done we will apply to the target account.
 
-Using Former2 :
-
+**Using Former2 :
+**
 Former2 allows us to generate Infrastructure-as-Code outputs from our existing resources within our AWS account. We can generate terraform code from Former2 using either CLI or web browser.
 
 Using Web Browser Steps:
@@ -90,8 +90,8 @@ d) Perform above steps.
 
 
 
-Using Cloudendure: (Acquired by AWS)
-
+**Using Cloudendure: (Acquired by AWS)
+**
 We also can use cloudendure to copy resource from one account to another. 
 
    Steps:
@@ -105,8 +105,8 @@ We also can use cloudendure to copy resource from one account to another.
 
 
 
-Using Sharing of Resource:
-
+**Using Sharing of Resource:
+**
 We can use AWS Resource Access Manager (RAM) for Sharing Resources.
 
    Steps:
